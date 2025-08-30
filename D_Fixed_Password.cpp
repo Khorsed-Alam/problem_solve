@@ -1,15 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int X;
-     
-    while(cin>>X){
-         if(X==1900){
-            cout<<"Correct"<<endl;
+
+int main() {
+    int password;
+
+    for (;;) {
+        cin >> password;
+
+        if (password == 1999) {
+            cout << "Correct" << endl;
             break;
-        }else{
-            cout<<"Wrong"<<endl;
+        } else {
+            cout << "Wrong" << endl;
         }
     }
+
     return 0;
 }
